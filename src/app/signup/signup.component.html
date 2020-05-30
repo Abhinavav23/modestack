@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-8">
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+          <div class="form-group">
+            <label for="username">UserName:</label>
+            <input
+             class="form-control"
+             id="username"
+             name="username"
+             type="text"
+             ngModel
+             required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+             class="form-control"
+             id="password"
+             name="password"
+             type="password"
+             ngModel
+             required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+             class="form-control"
+             id="email"
+             name="email"
+             type="text"
+             ngModel
+             required
+             email>
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <input
+             class="form-control"
+             id="address"
+             name="address"
+             type="text"
+             ngModel
+             required>
+          </div>
+          <button class="btn btn-primary">SignUp</button>
+        </form>
+      </div>
+    </div>
+  </div>
+

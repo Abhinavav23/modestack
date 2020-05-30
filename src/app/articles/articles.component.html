@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-8">
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input
+             class="form-control"
+             id="title"
+             name="title"
+             type="text"
+             ngModel
+             required>
+          </div>
+          <div class="form-group">
+            <label for="body">Description:</label>
+            <input
+             class="form-control"
+             id="body"
+             name="body"
+             type="text"
+             ngModel
+             required>
+          </div>
+          <div class="form-group">
+            <label for="author">Author:</label>
+            <input
+             class="form-control"
+             id="author"
+             name="author"
+             type="author"
+             ngModel
+             required
+             email>
+          </div>
+          <button class="btn btn-primary">Create</button>
+        </form>
+      </div>
+    </div>
+  </div>
+

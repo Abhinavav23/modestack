@@ -3,12 +3,17 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot --prod"
   },
+  "engines": { 
+    "node": "12.13.0",
+     "npm": "6.12.0"
+    },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.11",
@@ -19,8 +24,10 @@
     "@angular/platform-browser": "~8.2.11",
     "@angular/platform-browser-dynamic": "~8.2.11",
     "@angular/router": "~8.2.11",
+    "bootstrap": "^3.4.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
+    "underscore": "^1.10.2",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
